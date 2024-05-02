@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import noteContext from './noteContext'
-import BASE_URL from '../../Services/helper.js'
+import BASE_URL from '../../Services/help'
 
 const NoteState = (props) => {
 

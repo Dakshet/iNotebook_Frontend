@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import BASE_URL from '../Services/helper.js';
+import BASE_URL from '../Services/help';
 
 const Signup = ({ showAlert }) => {
     const navigate = useNavigate();
