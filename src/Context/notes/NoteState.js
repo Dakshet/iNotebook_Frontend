@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import noteContext from './noteContext'
-import BASE_URL from '../../Services/help'
 
 const NoteState = (props) => {
 
-    const host = BASE_URL;
+    const host = process.env.REACT_APP_BASE_URL;;
 
     const noteInitial = []
 

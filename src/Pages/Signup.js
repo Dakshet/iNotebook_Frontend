@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import BASE_URL from '../Services/help';
 
 const Signup = ({ showAlert }) => {
     const navigate = useNavigate();
@@ -12,7 +11,7 @@ const Signup = ({ showAlert }) => {
 
         if (credentials.password === credentials.cpassword) {
 
-            const response = await fetch(`${BASE_URL}/user/signup`, {
+            const response = await fetch(`${process.env.REACT_APP_BASE_URL}/user/signup`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

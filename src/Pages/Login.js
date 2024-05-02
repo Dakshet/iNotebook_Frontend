@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import BASE_URL from '../Services/help';
 
 const Login = ({ showAlert }) => {
 
@@ -11,7 +10,7 @@ const Login = ({ showAlert }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch(`${BASE_URL}/user/login`, {
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/user/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -21,10 +20,6 @@ const Login = ({ showAlert }) => {
 
         const json = await response.json();
 
-        // console.log(json);
-
-        // const log = localStorage.setItem("token", json.toten);
-        // console.log(log)
 
 
         if (json.success) {
