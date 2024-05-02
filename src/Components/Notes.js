@@ -19,7 +19,7 @@ const Notes = ({ showAlert }) => {
         else {
             navigate("/login")
         }
-    }, [])
+    }, [fetchNotes, navigate])
 
 
     const ref = useRef();
