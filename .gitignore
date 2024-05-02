@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/helper.js
 /.pnp
 .pnp.js
 
@@ -21,3 +22,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/Services/helper.js
+src/Services/2d.js
